@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore content planning, storytelling and writing techniques that help you connect with your audience.">
+<title>How to Create Content Your Audience Loves | DigitalGrow</title>
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Arial,Helvetica,sans-serif;background:#f8fafc;color:#172033;line-height:1.7}
+a{text-decoration:none;color:inherit}img{display:block;width:100%}
+.container{width:90%;max-width:1200px;margin:auto}
+header{background:#fff;border-bottom:1px solid #e8edf5;position:sticky;top:0;z-index:10}
+.navbar{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.logo{font-size:27px;font-weight:800;letter-spacing:-1px;color:#172033;white-space:nowrap}
+.logo span{color:#635bff}
+nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+nav a{color:#475569;font-size:14px;font-weight:600}
+nav a:hover{color:#635bff}
+.nav-button{background:#635bff;color:#fff!important;padding:10px 16px;border-radius:8px}
+.hero{background:linear-gradient(135deg,#101a35,#25205c 65%,#493fbd);color:#fff;padding:95px 0 100px}
+.hero-content{max-width:820px;text-align:center;margin:auto}
+.hero-label{display:inline-block;padding:7px 16px;border:1px solid #ffffff40;border-radius:50px;background:#ffffff12;color:#d8d5ff;font-size:12px;font-weight:bold;letter-spacing:1.5px;margin-bottom:25px}
+.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.15;letter-spacing:-2px;margin-bottom:24px}
+.hero h1 span{color:#a7a1ff}
+.hero p{max-width:650px;margin:0 auto 32px;color:#d4d9e9;font-size:17px}
+.hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
+.button{display:inline-block;padding:14px 25px;border-radius:8px;font-weight:bold;font-size:14px;transition:.25s}
+.button-primary{background:#fff;color:#27215f}
+.button-primary:hover{background:#e9e7ff;transform:translateY(-2px)}
+.button-outline{border:1px solid #a9a8dc;color:#fff}
+.button-outline:hover{background:#ffffff15}
+.intro-strip{background:#fff;border-bottom:1px solid #e8edf5;padding:23px 0}
+.intro-inner{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:18px 40px;color:#526077;font-size:14px;font-weight:600}
+.intro-inner span:before{content:"✓";color:#635bff;font-weight:bold;margin-right:9px}
+.blog-section{padding:85px 0}
+.section-heading{text-align:center;max-width:680px;margin:0 auto 42px}
+.section-label{color:#635bff;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+.section-heading h2{font-size:clamp(30px,4vw,42px);line-height:1.25;letter-spacing:-1px;margin:12px 0}
+.section-heading p{color:#64748b;font-size:15px}
+.blog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.blog-card{background:#fff;border:1px solid #e8edf5;border-radius:15px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.blog-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px #18224117}
+.blog-image{height:260px;overflow:hidden;background:#e8eaf5}
+.blog-image img{height:100%;object-fit:cover;transition:transform .5s}
+.blog-card:hover .blog-image img{transform:scale(1.05)}
+.blog-content{padding:25px}
+.category{display:inline-block;color:#5b52ed;background:#efeeff;border-radius:5px;padding:5px 10px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;margin-bottom:13px}
+.blog-content h3{font-size:23px;line-height:1.4;margin-bottom:12px}
+.blog-content h3 a:hover{color:#635bff}
+.blog-content p{font-size:14px;color:#64748b;margin-bottom:20px}
+.blog-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid #edf0f5;padding-top:17px;font-size:12px;color:#8490a3}
+.read-more{color:#635bff;font-size:13px;font-weight:800;white-space:nowrap}
+.newsletter{padding:65px 25px;margin-bottom:85px;border-radius:18px;text-align:center;color:#fff;background:linear-gradient(120deg,#22204e,#5549cf)}
+.newsletter h2{font-size:clamp(27px,4vw,37px);line-height:1.3;margin-bottom:15px}
+.newsletter p{color:#deddf8;max-width:580px;margin:0 auto 25px;font-size:15px}
+.newsletter .button{background:#fff;color:#3e35ad}
+footer{background:#11182b;color:#fff;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:45px;padding-bottom:40px}
+.footer-about p{max-width:360px;color:#a7b0c4;font-size:14px;margin-top:15px}
+.footer-column h4{font-size:15px;margin-bottom:17px}
+.footer-column a{display:block;color:#a7b0c4;font-size:13px;margin-bottom:10px}
+.footer-column a:hover{color:#b6b0ff}
+.copyright{text-align:center;border-top:1px solid #293149;padding-top:20px;color:#9aa4ba;font-size:12px}
+@media(max-width:850px){.navbar{padding:15px 0;flex-direction:column;gap:15px}nav{justify-content:center;gap:13px 18px}.hero{padding:75px 0}.blog-image{height:220px}.footer-grid{grid-template-columns:1fr 1fr}.footer-about{grid-column:1/-1}}
+@media(max-width:580px){.container{width:92%}.logo{font-size:25px}nav{gap:10px 14px}nav a{font-size:12px}.nav-button{padding:8px 12px}.hero{padding:65px 0}.hero h1{letter-spacing:-1px}.hero p{font-size:15px}.intro-inner{gap:10px 20px;font-size:12px}.blog-section{padding:60px 0}.blog-grid{grid-template-columns:1fr;gap:22px}.blog-image{height:230px}.blog-content{padding:21px}.blog-content h3{font-size:21px}.newsletter{margin-bottom:60px}.footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px}}
+
+
+.article-hero{background:linear-gradient(135deg,#101a35,#25205c 65%,#493fbd);color:#fff;padding:70px 0 60px}
+.article-hero .category{background:#ffffff1f;color:#d8d5ff}
+.article-hero h1{font-size:clamp(30px,4.5vw,48px);line-height:1.2;letter-spacing:-1px;max-width:820px;margin:14px 0 16px}
+.article-hero p{color:#d4d9e9;max-width:680px;font-size:16px}
+.article-meta{margin-top:20px;font-size:13px;color:#a7a1ff;font-weight:700;letter-spacing:.4px}
+.article-wrap{max-width:820px;margin:0 auto;padding:55px 0 70px}
+.article-img{border-radius:15px;overflow:hidden;margin-bottom:38px;background:#e8eaf5}
+.article-img img{height:auto}
+.article-body h2{font-size:27px;line-height:1.3;letter-spacing:-.5px;margin:36px 0 13px;color:#172033}
+.article-body h2:first-child{margin-top:0}
+.article-body p{color:#3d4b61;font-size:16px;margin-bottom:16px}
+.article-body ul{margin:0 0 18px 20px;color:#3d4b61;font-size:16px}
+.article-body li{margin-bottom:9px}
+.tip{background:#efeeff;border:1px solid #d9d5ff;border-radius:12px;padding:20px 23px;margin:26px 0}
+.tip strong{color:#4c43c4;display:block;margin-bottom:6px;font-size:15px}
+.tip p{margin:0;font-size:15px}
+.back-link{display:inline-block;margin-bottom:28px;color:#635bff;font-weight:800;font-size:14px}
+.read-next{padding:0 0 80px}
+.read-next h2{font-size:29px;letter-spacing:-.5px;margin-bottom:24px}
+.next-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.next-card{background:#fff;border:1px solid #e8edf5;border-radius:15px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.next-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px #18224117}
+.next-card .blog-image{height:150px}
+.next-card .blog-content{padding:18px}
+.next-card h3{font-size:17px;line-height:1.4}
+@media(max-width:850px){.next-grid{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo">Digital<span>Grow.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="index.html#seo">SEO</a><a href="index.html#social-media">Social Media</a>
+      <a href="index.html#content-marketing">Content Marketing</a><a href="index.html#about">About</a>
+      <a href="index.html#contact" class="nav-button">Get Started</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="article-hero">
+  <div class="container">
+    <span class="category">Content Marketing</span>
+    <h1>How to Create Content Your Audience Loves</h1>
+    <p>Explore content planning, storytelling and writing techniques that help you connect with your audience.</p>
+    <div class="article-meta">7 min read &nbsp;•&nbsp; DigitalGrow Blog</div>
+  </div>
+</section>
+<div class="container article-wrap">
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <div class="article-img"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=85" alt="Notebook and pen for content planning"></div>
+  <div class="article-body">
+    <h2>What Content Marketing Really Is</h2>
+    <p>Content marketing means creating useful, interesting content — articles, videos, guides, posts — that attracts your ideal customers and earns their trust, instead of interrupting them with ads. When people learn from you repeatedly, buying from you becomes the natural next step.</p>
+    <p>The secret is simple to say and hard to do: make content for your audience's problems, not for your product's features.</p>
+    <h2>Start With Your Audience's Questions</h2>
+    <p>Your customers are already telling you what content to make. Collect questions from comments, messages, sales calls and reviews. Check what people ask on Google ("People also ask") and in Facebook groups or forums in your niche. Every repeated question is a content idea with built-in demand.</p>
+    <ul>
+      <li>Questions beginners ask → make simple guides and explainers.</li>
+      <li>Problems customers complain about → make solutions and checklists.</li>
+      <li>Comparisons people make before buying → make honest comparison content.</li>
+      <li>Mistakes you see again and again → make "avoid these mistakes" content, which spreads very well.</li>
+    </ul>
+    <h2>Plan With a Simple Content Calendar</h2>
+    <p>Random posting produces random results. Take 30 minutes each week to plan: choose 3–4 topics, decide the format for each (article, reel, carousel, story), and write them in one batch. A calendar removes the daily "what should I post?" stress and keeps your message consistent.</p>
+    <div class="tip"><strong>Beginner Tip</strong><p>One strong idea can become five pieces of content: a blog article, a short video explaining its main point, a carousel of its steps, a poll about it, and an email to your list. Work smart — repurpose before you create more.</p></div>
+    <h2>Tell Stories, Not Just Facts</h2>
+    <p>Facts tell, stories sell. A list of tips is useful, but the same tips wrapped in a real story — a customer's problem, what you tried, what worked — is memorable. Use simple structure: the problem, the struggle, the solution, the result. You do not need drama; honest, specific details are enough.</p>
+    <h2>Write in a Way People Enjoy</h2>
+    <p>Use short paragraphs, clear subheadings and simple words. Talk to one reader ("you"), not a crowd. Start with the most valuable point instead of a long introduction, and end every piece with one clear next step — read another guide, message you, or try the tip today.</p>
+    <h2>Stay Consistent and Patient</h2>
+    <p>Content marketing compounds: the first month feels quiet, but by month three your library of helpful content starts bringing search traffic, shares and inquiries on its own. Publish on schedule, review what your audience responds to, and keep improving. The brands your customers love are simply the ones that kept showing up with value.</p>
+  </div>
+</div>
+<section class="container read-next">
+  <h2>Read Next</h2>
+  <div class="next-grid">
+      <article class="next-card">
+        <a href="blog-seo.html" class="blog-image"><img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=900&q=85" alt="Digital marketing and SEO workspace" loading="lazy"></a>
+        <div class="blog-content"><span class="category">SEO</span><h3><a href="blog-seo.html">SEO for Beginners: A Guide to Ranking Higher</a></h3></div>
+      </article>
+      <article class="next-card">
+        <a href="blog-social-media.html" class="blog-image"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=900&q=85" alt="Social media marketing and digital communication" loading="lazy"></a>
+        <div class="blog-content"><span class="category">Social Media</span><h3><a href="blog-social-media.html">Social Media Marketing That Builds Engagement</a></h3></div>
+      </article>
+      <article class="next-card">
+        <a href="blog-email-marketing.html" class="blog-image"><img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=900&q=85" alt="Email marketing and online communication" loading="lazy"></a>
+        <div class="blog-content"><span class="category">Email Marketing</span><h3><a href="blog-email-marketing.html">Email Marketing Tips for Better Results</a></h3></div>
+      </article>
+  </div>
+</section>
+</main>
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about"><a href="index.html" class="logo" style="color:white">Digital<span>Grow.</span></a><p>Helping students, creators and businesses understand digital marketing and build a stronger online presence.</p></div>
+      <div class="footer-column"><h4>Explore</h4><a href="index.html">Home</a><a href="index.html#seo">SEO</a><a href="index.html#social-media">Social Media</a><a href="index.html#content-marketing">Content Marketing</a></div>
+      <div class="footer-column"><h4>Resources</h4><a href="blog-seo.html">SEO Guide</a><a href="blog-social-media.html">Social Media Guide</a><a href="blog-content-marketing.html">Content Guide</a><a href="index.html#about">About Us</a></div>
+    </div>
+    <div class="copyright">© 2026 DigitalGrow. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
